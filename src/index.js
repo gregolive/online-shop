@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import RouteSwitch from './RouteSwitch';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <RouteSwitch />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouteSwitch />);
+
