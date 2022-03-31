@@ -1,5 +1,5 @@
 header {
-  background: #F8F4F1;
+  background: var(--primary);
   height: 5rem;
   padding: 0 6vw;
   display: flex;
@@ -8,6 +8,7 @@ header {
 }
 
 .HeaderLogo {
+  color: var(--text);
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -20,9 +21,11 @@ header {
 h1 {
   font-size: 2.2em;
   font-weight: 700;
+  margin: 0;
 }
 
 .HeaderLinks {
+  color: var(--text);
   font-size: 1.1rem;
   display: flex;
   gap: 4vw;

@@ -1,0 +1,17 @@
+footer {
+  color: var(--text);
+  background: var(--secondary);
+  border-top: 1px solid black;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--text);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

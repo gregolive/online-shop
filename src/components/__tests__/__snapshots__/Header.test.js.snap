@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders consistently 1`] = `
+<div>
+  <header>
+    <a
+      class="HeaderLogo"
+      href=""
+    >
+      <img
+        alt="prospresso logo"
+        src="logo.png"
+      />
+      <h1>
+        prospresso
+      </h1>
+    </a>
+    <div
+      class="HeaderLinks"
+    >
+      <a
+        href=""
+      >
+        Home
+      </a>
+      <a
+        href=""
+      >
+        Shop
+      </a>
+    </div>
+  </header>
+</div>
+`;
