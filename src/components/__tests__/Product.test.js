@@ -12,7 +12,12 @@ test('renders product image', () => {
 
 test('renders product vendor', () => {
   render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
-  expect(screen.getAllByText(testProduct.vendor)[0]).toBeInTheDocument();
+  expect(screen.getByText(testProduct.vendor)).toBeInTheDocument();
+});
+
+test('renders product id', () => {
+  render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
+  expect(screen.getByText(testProduct.id.toUpperCase())).toBeInTheDocument();
 });
 
 test('renders product name', () => {
@@ -22,10 +27,15 @@ test('renders product name', () => {
 
 test('renders product price', () => {
   render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
-  expect(screen.getAllByText(testProduct.price)[0]).toBeInTheDocument();
+  expect(screen.getByText(testProduct.price)).toBeInTheDocument();
 });
 
 test('renders add to cart button', () => {
   render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
   expect(screen.getAllByRole('button')[0].textContent).toMatch(/Add to cart/);
+});
+
+test('renders buy now button', () => {
+  render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
+  expect(screen.getAllByRole('button')[1].textContent).toMatch(/Buy now/);
 });

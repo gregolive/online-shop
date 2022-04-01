@@ -17,15 +17,32 @@ section {
 h2 {
   font-size: 2rem;
   margin: 0;
-  padding-bottom: 2rem;
 }
 
 .Button {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
-  border: none;
+  border: 1px solid var(--text);
   border-radius: 0.25rem;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.PrimaryButton {
+  color: var(--text);
+  background: var(--primary);
+}
+
+.PrimaryButton:hover {
+  filter: brightness(80%);
+}
+
+.SecondaryButton {
+  color: white;
+  background: var(--highlight);
+}
+
+.SecondaryButton:hover {
+  filter: brightness(90%);
 }

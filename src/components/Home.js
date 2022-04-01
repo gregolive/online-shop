@@ -7,7 +7,7 @@ const Home = () => {
       <div className='HomeWrapper'>
         <h2 className='HeroText'>Your one stop shop for high quality espresso tools!</h2>
         <Link to='/shop'>
-          <button type='button' className='Button ShopButton'>Shop now</button>
+          <button type='button' className='Button PrimaryButton'>Shop now</button>
         </Link>
       </div>
     </section>

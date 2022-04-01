@@ -9,10 +9,17 @@ const Product = ({ testProduct }) => {
   return (
     <section className="Product">
       <img src={product.img} alt={`${product.vendor} - ${product.name}`} className='ProductImg' />
-      <small>{product.vendor}</small>
-      <h2>{product.name}</h2>
-      <strong className='ShopPrice'>{product.price}</strong>
-      <button className='Button CartButton'>Add to cart</button>
+      <div className='ProductOverview'>
+        <div className='VendorInfo'>
+          <small>{product.vendor}</small> | <small>{product.id.toUpperCase()}</small>
+        </div>
+        <h2>{product.name}</h2>
+        <strong className='Price'>{product.price}</strong>
+        <div className='ProductButtons'>
+          <button className='Button PrimaryButton'>Add to cart</button>
+          <button className='Button SecondaryButton'>Buy now</button>
+        </div>
+      </div>
     </section>
   );
 };

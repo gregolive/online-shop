@@ -1,10 +1,14 @@
+.ShopHeading {
+  padding-bottom: 2rem;
+}
+
 .ProductGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
 }
 
-.Product {
+.ShopProduct {
   color: var(--text);
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -25,13 +29,4 @@
 
 .ProductName > a:hover {
   color: var(--highlight);
-}
-
-.CartButton {
-  color: var(--text);
-  font-size: 1rem;
-}
-
-.CartButton:hover {
-  background: var(--secondary);
 }
