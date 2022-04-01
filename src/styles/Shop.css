@@ -1,0 +1,31 @@
+.Shop {
+  padding: 3rem 6vw;
+  box-sizing: border-box;
+}
+
+.ShopHeading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ProductGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.Product {
+  border: 1px solid var(--text);
+  padding: 0.5rem;
+}
+
+.Product > img {
+  width: 100%;
+}
+
+.Manufacturer {
+
+}
+
+.ProductName {
+  
+}
