@@ -1,5 +1,6 @@
 .Home {
   background: center / cover no-repeat url(../img/banner.jpg);
+  padding: 0;
   position: relative;
 }
 

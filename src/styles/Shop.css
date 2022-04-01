@@ -1,13 +1,3 @@
-.Shop {
-  padding: 3rem 6vw;
-  box-sizing: border-box;
-}
-
-.ShopHeading {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-
 .ProductGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -21,11 +11,11 @@
   gap: 1rem;
 }
 
-.ProductImg {
+.ShopImg {
   width: 100%;
 }
 
-.Vendor {
+.ShopVendor {
   color: var(--highlight);
 }
 

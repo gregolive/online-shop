@@ -9,10 +9,15 @@ p {
 
 section {
   min-height: calc(100vh - 5rem);
+  padding: 3rem 6vw;
+  box-sizing: border-box;
 }
 
+
 h2 {
+  font-size: 2rem;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
 .Button {

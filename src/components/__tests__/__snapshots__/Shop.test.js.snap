@@ -17,7 +17,7 @@ exports[`renders consistently 1`] = `
         class="Product"
       >
         <a
-          href="/shop/1o2o0ubxxl1g1shdz"
+          href="/Pearl Model S Coffee Scale - Black"
         >
           <img
             alt="Acaia - Pearl Model S Coffee Scale - Black"
@@ -37,7 +37,7 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/"
+              href="/Pearl Model S Coffee Scale - Black"
             >
               Pearl Model S Coffee Scale - Black
             </a>
@@ -58,7 +58,7 @@ exports[`renders consistently 1`] = `
         class="Product"
       >
         <a
-          href="/shop/1o2o0ubxxl1g1she0"
+          href="/The Force Tamp 58.5mm"
         >
           <img
             alt="Espresso Parts - The Force Tamp 58.5mm"
@@ -78,7 +78,7 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/"
+              href="/The Force Tamp 58.5mm"
             >
               The Force Tamp 58.5mm
             </a>
@@ -99,7 +99,7 @@ exports[`renders consistently 1`] = `
         class="Product"
       >
         <a
-          href="/shop/1o2o0ubxxl1g1she1"
+          href="/Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
         >
           <img
             alt="IMS - Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
@@ -119,7 +119,7 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/"
+              href="/Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
             >
               Precision Portafilter Basket - Double 18/20 gr - Ridgeless
             </a>
@@ -140,7 +140,7 @@ exports[`renders consistently 1`] = `
         class="Product"
       >
         <a
-          href="/shop/1o2o0ubxxl1g1she2"
+          href="/Maplewood Knockbox Set"
         >
           <img
             alt="IMS - Maplewood Knockbox Set"
@@ -160,7 +160,7 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/"
+              href="/Maplewood Knockbox Set"
             >
               Maplewood Knockbox Set
             </a>
@@ -181,7 +181,7 @@ exports[`renders consistently 1`] = `
         class="Product"
       >
         <a
-          href="/shop/1o2o0ubxxl1g1she3"
+          href="/Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs"
         >
           <img
             alt="SSP - Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs"
@@ -201,7 +201,7 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/"
+              href="/Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs"
             >
               Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs
             </a>
@@ -222,7 +222,7 @@ exports[`renders consistently 1`] = `
         class="Product"
       >
         <a
-          href="/shop/1o2o0ubxxl1g1she4"
+          href="/Tamping Mat with Corner Edge"
         >
           <img
             alt="Barista Basics - Tamping Mat with Corner Edge"
@@ -242,7 +242,7 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/"
+              href="/Tamping Mat with Corner Edge"
             >
               Tamping Mat with Corner Edge
             </a>

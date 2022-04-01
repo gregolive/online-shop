@@ -37,3 +37,7 @@ const products = [
 ];
 
 export default products;
+
+const findProduct = (productName) => products.filter((p) => p.name === productName)[0];
+
+export { findProduct };
