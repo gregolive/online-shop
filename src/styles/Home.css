@@ -23,4 +23,13 @@
   font-size: clamp(1.5rem, 1.5rem + 1vw, 2.4rem);
 }
 
+.ShopButton {
+  color: var(--text);
+  background: var(--primary);
+  font-size: 1.4rem;
+  border: 1px solid var(--text);
+}
 
+.ShopButton:hover {
+  background: var(--secondary);
+}

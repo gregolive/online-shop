@@ -8,10 +8,17 @@ const Shop = () => {
       <div className='ProductGrid'>
         {products.map((product) =>
           <article key={product.id} className='Product'>
-            <img src={product.img} alt={`${product.vendor} - ${product.name}`} />
-            <small className='Manufacturer'>{product.vendor}</small>
-            <h3 className='ProductName'>{product.name}</h3>
-            <strong className='ProductPrice'>{product.price}</strong>
+            <a href=''>
+              <img src={product.img} alt={`${product.vendor} - ${product.name}`} className='ProductImg' />
+            </a>
+            <div className='ProductOverview'>
+              <small className='Vendor'>{product.vendor}</small>
+              <h3 className='ProductName'>
+                <a href=''>{product.name}</a>
+              </h3>
+              <strong className='Price'>{product.price}</strong>
+            </div>
+            <button className='Button CartButton'>Add to cart</button>
           </article>
         )}
       </div>

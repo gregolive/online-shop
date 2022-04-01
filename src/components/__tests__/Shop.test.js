@@ -33,3 +33,13 @@ test('renders product price', () => {
   render(<Shop />);
   expect(screen.getAllByText(testProduct.price)[0]).toBeInTheDocument();
 });
+
+test('renders add to cart button', () => {
+  render(<Shop />);
+  expect(screen.getAllByRole('button')[0].textContent).toMatch(/Add to cart/);
+});
+
+it('renders consistently', () => {
+  const { container } = render(<Shop />);
+  expect(container).toMatchSnapshot();
+});

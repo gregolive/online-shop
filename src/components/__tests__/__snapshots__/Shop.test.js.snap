@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders consistently 1`] = `
+<div>
+  <section
+    class="Shop"
+  >
+    <h2
+      class="ShopHeading"
+    >
+      Shop Espresso Tools
+    </h2>
+    <div
+      class="ProductGrid"
+    >
+      <article
+        class="Product"
+      >
+        <a
+          href=""
+        >
+          <img
+            alt="Acaia - Pearl Model S Coffee Scale - Black"
+            class="ProductImg"
+            src="Acaia-Pearl-S-black.jpg"
+          />
+        </a>
+        <div
+          class="ProductOverview"
+        >
+          <small
+            class="Vendor"
+          >
+            Acaia
+          </small>
+          <h3
+            class="ProductName"
+          >
+            <a
+              href=""
+            >
+              Pearl Model S Coffee Scale - Black
+            </a>
+          </h3>
+          <strong
+            class="Price"
+          >
+            $195.00
+          </strong>
+        </div>
+        <button
+          class="Button CartButton"
+        >
+          Add to cart
+        </button>
+      </article>
+      <article
+        class="Product"
+      >
+        <a
+          href=""
+        >
+          <img
+            alt="Espresso Parts - The Force Tamp 58.5mm"
+            class="ProductImg"
+            src="forcetamp585.jpg"
+          />
+        </a>
+        <div
+          class="ProductOverview"
+        >
+          <small
+            class="Vendor"
+          >
+            Espresso Parts
+          </small>
+          <h3
+            class="ProductName"
+          >
+            <a
+              href=""
+            >
+              The Force Tamp 58.5mm
+            </a>
+          </h3>
+          <strong
+            class="Price"
+          >
+            $199.00
+          </strong>
+        </div>
+        <button
+          class="Button CartButton"
+        >
+          Add to cart
+        </button>
+      </article>
+      <article
+        class="Product"
+      >
+        <a
+          href=""
+        >
+          <img
+            alt="IMS - Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
+            class="ProductImg"
+            src="ims18g-ridgeless.jpg"
+          />
+        </a>
+        <div
+          class="ProductOverview"
+        >
+          <small
+            class="Vendor"
+          >
+            IMS
+          </small>
+          <h3
+            class="ProductName"
+          >
+            <a
+              href=""
+            >
+              Precision Portafilter Basket - Double 18/20 gr - Ridgeless
+            </a>
+          </h3>
+          <strong
+            class="Price"
+          >
+            $30.58
+          </strong>
+        </div>
+        <button
+          class="Button CartButton"
+        >
+          Add to cart
+        </button>
+      </article>
+      <article
+        class="Product"
+      >
+        <a
+          href=""
+        >
+          <img
+            alt="Barista Basics - Maplewood Knockbox Set"
+            class="ProductImg"
+            src="maple-knock-set.jpg"
+          />
+        </a>
+        <div
+          class="ProductOverview"
+        >
+          <small
+            class="Vendor"
+          >
+            Barista Basics
+          </small>
+          <h3
+            class="ProductName"
+          >
+            <a
+              href=""
+            >
+              Maplewood Knockbox Set
+            </a>
+          </h3>
+          <strong
+            class="Price"
+          >
+            $63.96
+          </strong>
+        </div>
+        <button
+          class="Button CartButton"
+        >
+          Add to cart
+        </button>
+      </article>
+      <article
+        class="Product"
+      >
+        <a
+          href=""
+        >
+          <img
+            alt="SSP - Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs"
+            class="ProductImg"
+            src="ssp-multi-purpose.jpg"
+          />
+        </a>
+        <div
+          class="ProductOverview"
+        >
+          <small
+            class="Vendor"
+          >
+            SSP
+          </small>
+          <h3
+            class="ProductName"
+          >
+            <a
+              href=""
+            >
+              Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs
+            </a>
+          </h3>
+          <strong
+            class="Price"
+          >
+            $185.00
+          </strong>
+        </div>
+        <button
+          class="Button CartButton"
+        >
+          Add to cart
+        </button>
+      </article>
+      <article
+        class="Product"
+      >
+        <a
+          href=""
+        >
+          <img
+            alt="Barista Basics - Tamping Mat with Corner Edge"
+            class="ProductImg"
+            src="tamping-mat-corner.jpg"
+          />
+        </a>
+        <div
+          class="ProductOverview"
+        >
+          <small
+            class="Vendor"
+          >
+            Barista Basics
+          </small>
+          <h3
+            class="ProductName"
+          >
+            <a
+              href=""
+            >
+              Tamping Mat with Corner Edge
+            </a>
+          </h3>
+          <strong
+            class="Price"
+          >
+            $28.00
+          </strong>
+        </div>
+        <button
+          class="Button CartButton"
+        >
+          Add to cart
+        </button>
+      </article>
+    </div>
+  </section>
+</div>
+`;
