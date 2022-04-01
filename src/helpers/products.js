@@ -1,19 +1,39 @@
 import uniqid from 'uniqid';
 
-const formatPrice = (value) => {
-  const dollars = Math.trunc(value / 100);
-  let cents = value % 100;
-  if (cents < 10) { cents = '0' + cents; }
-  return `$${dollars}.${cents}`
+import pearlImg from '../img/Acaia-Pearl-S-black.jpg';
+import tampImg from '../img/forcetamp585.jpg';
+import basketImg from '../img/ims18g-ridgeless.jpg';
+import knockboxImg from '../img/maple-knock-set.jpg';
+import burrImg from '../img/ssp-multi-purpose.jpg';
+import matImg from '../img/tamping-mat-corner.jpg';
+
+class Product {
+  constructor (name, vendor, price, stock, img) {
+    this.id = uniqid();
+    this.name = name;
+    this.vendor = vendor;
+    this.price = this.formatPrice(price);
+    this.stock = stock;
+    this.img = img;
+  }
+
+  inStock() { return (this.stock > 0) ? true : false };
+
+  formatPrice = (value) => {
+    const dollars = Math.trunc(value / 100);
+    let cents = value % 100;
+    if (cents < 10) { cents = '0' + cents; }
+    return `$${dollars}.${cents}`
+  };
 };
 
 const products = [
-  { id: uniqid(), name: 'Pearl Model S Coffee Scale - Black', vendor: 'Acaia', price: formatPrice(19500), inStock: true, img: require('../img/Acaia-Pearl-S-black.jpg')},
-  { id: uniqid(), name: 'The Force Tamp 58.5mm', vendor: 'Espresso Parts', price: formatPrice(19900), inStock: true, img: require('../img/forcetamp585.jpg')},
-  { id: uniqid(), name: 'Precision Portafilter Basket - Double 18/20 gr - Ridgeless', vendor: 'IMS', price: formatPrice(3058), inStock: true, img: require('../img/ims18g-ridgeless.jpg')},
-  { id: uniqid(), name: 'Maplewood Knockbox Set', vendor: 'Barista Basics', price: formatPrice(6396), inStock: true, img: require('../img/maple-knock-set.jpg')},
-  { id: uniqid(), name: 'Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs', vendor: 'SSP', price: formatPrice(18500), inStock: true, img: require('../img/ssp-multi-purpose.jpg')},
-  { id: uniqid(), name: 'Tamping Mat with Corner Edge', vendor: 'Barista Basics', price: formatPrice(2800), inStock: true, img: require('../img/tamping-mat-corner.jpg')},
+  new Product('Pearl Model S Coffee Scale - Black', 'Acaia', 19500, 5, pearlImg),
+  new Product('The Force Tamp 58.5mm', 'Espresso Parts', 19900, 2, tampImg),
+  new Product('Precision Portafilter Basket - Double 18/20 gr - Ridgeless', 'IMS', 3058, 4, basketImg),
+  new Product('Maplewood Knockbox Set', 'IMS', 6396, 10, knockboxImg),
+  new Product('Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs', 'SSP', 18500, 1, burrImg),
+  new Product('Tamping Mat with Corner Edge', 'Barista Basics', 2800, 0, matImg),
 ];
 
 export default products;

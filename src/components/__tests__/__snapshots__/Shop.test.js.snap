@@ -143,7 +143,7 @@ exports[`renders consistently 1`] = `
           href=""
         >
           <img
-            alt="Barista Basics - Maplewood Knockbox Set"
+            alt="IMS - Maplewood Knockbox Set"
             class="ProductImg"
             src="maple-knock-set.jpg"
           />
@@ -154,7 +154,7 @@ exports[`renders consistently 1`] = `
           <small
             class="Vendor"
           >
-            Barista Basics
+            IMS
           </small>
           <h3
             class="ProductName"
