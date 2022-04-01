@@ -1,4 +1,5 @@
 import '../styles/Shop.css';
+import { Link } from "react-router-dom";
 import products from '../helpers/products';
 
 const Shop = () => {
@@ -8,13 +9,13 @@ const Shop = () => {
       <div className='ProductGrid'>
         {products.map((product) =>
           <article key={product.id} className='Product'>
-            <a href=''>
+            <Link to={`/shop/${product.id}`}>
               <img src={product.img} alt={`${product.vendor} - ${product.name}`} className='ProductImg' />
-            </a>
+            </Link>
             <div className='ProductOverview'>
               <small className='Vendor'>{product.vendor}</small>
               <h3 className='ProductName'>
-                <a href=''>{product.name}</a>
+                <Link to=''>{product.name}</Link>
               </h3>
               <strong className='Price'>{product.price}</strong>
             </div>

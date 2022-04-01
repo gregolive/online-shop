@@ -13,12 +13,16 @@ exports[`renders consistently 1`] = `
       >
         Your one stop shop for high quality espresso tools!
       </h2>
-      <button
-        class="Button ShopButton"
-        type="button"
+      <a
+        href="/shop"
       >
-        Shop now
-      </button>
+        <button
+          class="Button ShopButton"
+          type="button"
+        >
+          Shop now
+        </button>
+      </a>
     </div>
   </section>
 </div>
