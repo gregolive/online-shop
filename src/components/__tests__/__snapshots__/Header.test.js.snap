@@ -5,7 +5,7 @@ exports[`renders consistently 1`] = `
   <header>
     <a
       class="HeaderLogo"
-      href=""
+      href="/"
     >
       <img
         alt="prospresso logo"
@@ -19,12 +19,12 @@ exports[`renders consistently 1`] = `
       class="HeaderLinks"
     >
       <a
-        href=""
+        href="/"
       >
         Home
       </a>
       <a
-        href=""
+        href="/shop"
       >
         Shop
       </a>

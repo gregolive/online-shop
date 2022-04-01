@@ -1,16 +1,17 @@
 import '../styles/Header.css';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <a href='' className='HeaderLogo'>
+      <Link to='/' className='HeaderLogo'>
         <img src={require('../img/logo.png')} alt='prospresso logo' />
         <h1>prospresso</h1>
-      </a>
-      
+      </Link>
+
       <div className='HeaderLinks'>
-        <a href=''>Home</a>
-        <a href=''>Shop</a>
+        <Link to='/'>Home</Link>
+        <Link to='/shop'>Shop</Link>
       </div>
     </header>
   );
