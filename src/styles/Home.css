@@ -1,0 +1,26 @@
+.Home {
+  background: center / cover no-repeat url(../img/banner.jpg);
+  position: relative;
+}
+
+.HomeWrapper {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100%;
+  width: 100%;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.HeroText {
+  color: var(--primary);
+  font-size: clamp(1.5rem, 1.5rem + 1vw, 2.4rem);
+}
+
+

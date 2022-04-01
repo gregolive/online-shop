@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders consistently 1`] = `
+<div>
+  <section
+    class="Home"
+  >
+    <div
+      class="HomeWrapper"
+    >
+      <h2
+        class="HeroText"
+      >
+        Your one stop shop for high quality espresso tools!
+      </h2>
+      <button
+        class="Button ShopButton"
+        type="button"
+      >
+        Shop now
+      </button>
+    </div>
+  </section>
+</div>
+`;

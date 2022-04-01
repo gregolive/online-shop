@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  min-height: calc(100vh - 5rem);
+}
+
+h2 {
+  margin: 0;
+}
+
+.Button {
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ShopButton {
+  color: var(--text);
+  background: var(--primary);
+  font-size: 1.4rem;
+  border: 1px solid var(--text);
+}
+
+.ShopButton:hover {
+  background: var(--secondary);
+}
