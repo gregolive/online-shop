@@ -20,9 +20,9 @@ test('renders product id', () => {
   expect(screen.getByText(testProduct.id.toUpperCase())).toBeInTheDocument();
 });
 
-test('renders product name', () => {
+test('renders product name in all caps', () => {
   render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
-  expect(screen.getByRole('heading').textContent).toMatch(testProduct.name);
+  expect(screen.getByRole('heading').textContent).toMatch(testProduct.name.toUpperCase());
 });
 
 test('renders product price', () => {

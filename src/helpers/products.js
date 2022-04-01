@@ -29,7 +29,7 @@ class Product {
 
 const products = [
   new Product('Pearl Model S Coffee Scale - Black', 'Acaia', 19500, 5, pearlImg),
-  new Product('The Force Tamp 58.5mm', 'Espresso Parts', 19900, 2, tampImg),
+  new Product('Force Tamp 58.5mm', 'Espresso Parts', 19900, 2, tampImg),
   new Product('Precision Portafilter Basket - Double 18g - Ridgeless', 'IMS', 3058, 4, basketImg),
   new Product('Maplewood Knockbox Set', 'IMS', 6396, 10, knockboxImg),
   new Product('Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs', 'SSP', 18500, 1, burrImg),

@@ -39,8 +39,25 @@
   color: var(--danger);
 }
 
-.ProductButtons {
+.QuantityForm {
   margin-top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.QuantityForm > label {
+  font-weight: 600;
+}
+
+.QuantityForm > select {
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  max-width: 3rem;
+}
+
+.ProductButtons {
+  margin-top: 0.5rem;
   display: grid;
   gap: 1rem;
 }
