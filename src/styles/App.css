@@ -44,5 +44,14 @@ h2 {
 }
 
 .SecondaryButton:hover {
-  filter: brightness(90%);
+  filter: brightness(80%);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  filter: brightness(80%);
+}
+
+button:disabled:hover {
+  filter: brightness(80%);
 }

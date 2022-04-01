@@ -5,6 +5,8 @@
   --primary: #f8f4f1;
   --secondary: #9a8c98;
   --highlight: #7e564e;
+  --success: #339933;
+  --danger: #ff3860;
 }
 
 body {

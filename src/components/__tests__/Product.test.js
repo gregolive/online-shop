@@ -30,6 +30,11 @@ test('renders product price', () => {
   expect(screen.getByText(testProduct.price)).toBeInTheDocument();
 });
 
+test('renders product stock', () => {
+  render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
+  expect(screen.getByText(/In stock/)).toBeInTheDocument();
+});
+
 test('renders add to cart button', () => {
   render(<BrowserRouter><Product testProduct={ testProduct }/></BrowserRouter>);
   expect(screen.getAllByRole('button')[0].textContent).toMatch(/Add to cart/);
