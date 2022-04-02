@@ -1,7 +1,7 @@
 import '../styles/Cart.css';
 import '@fortawesome/fontawesome-free/js/all';
 
-const Cart = ({ open, items, itemCount, closeCart, updateCart }) => {
+const Cart = ({ open, items, itemCount, closeCart, updateCart, removeCartItem }) => {
   const containerClass = (open) ? 'CartContainer Open' : 'CartContainer Close';
 
   const cartProducts = (
@@ -16,15 +16,15 @@ const Cart = ({ open, items, itemCount, closeCart, updateCart }) => {
         </div>
         
         <div className='ItemQuantity'>
-          <button type='button' className='Button TransparentButton'>
+          <button type='button' className='Button TransparentButton' onClick={() => {updateCart(item.product, -1, false)}}>
             <i className='fa-solid fa-minus'></i>
           </button>
           <span>{item.quantity}</span>
-          <button type='button' className='Button TransparentButton'>
+          <button type='button' className='Button TransparentButton' onClick={() => {updateCart(item.product, 1, false)}}>
             <i className='fa-solid fa-plus'></i>
           </button>
 
-          <button type='button' className='Button TransparentButton'>
+          <button type='button' className='Button TransparentButton' onClick={() => removeCartItem(item.product.name, item.quantity)}>
             Remove
           </button>
         </div>

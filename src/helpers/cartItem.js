@@ -5,6 +5,8 @@ class CartItem {
   };
 
   updateQuantity (count) {
+    console.log(this.quantity);
+    console.log(count);
     this.quantity += count;
   }
 };

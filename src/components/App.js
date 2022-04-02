@@ -16,19 +16,25 @@ const App = () => {
 
   const toggleCart = () => setcartOpen(!cartOpen);
 
+  const removeCartItem = (productName, quantity) => {
+    setCartItems(cartItems.filter((item) => item.product.name !== productName ));
+    setItemCount(itemCount - quantity);
+  };
+
   const updateCart = (product, quantity, open) => {
     const item = cartItems.find((item) => item.product === product);
     if (item) {
       item.updateQuantity(quantity);
+      if (item.quantity < 1) { removeCartItem(item.product.name, 1); }
     } else {
       const newItem = new CartItem(product, quantity);
       setCartItems(cartItems.concat(newItem));
     }
-    setItemCount(itemCount + quantity);
+    setItemCount(itemCount + parseInt(quantity));
     if (open) { toggleCart() }
   };
 
-  // Get cart info from localStorage on mount
+  // Fetch cart info from localStorage on mount
   useEffect(() => {
     const savedItems = JSON.parse(localStorage.getItem('CartItems'));
     const savedCount = parseInt(localStorage.getItem('CartCount'));
@@ -40,8 +46,7 @@ const App = () => {
 
   // Save cart to localStorage on cartItems/itemCount update
   useEffect(() => {
-    const items = JSON.stringify(cartItems);
-    localStorage.setItem('CartItems', items);
+    localStorage.setItem('CartItems', JSON.stringify(cartItems));
     localStorage.setItem('CartCount', itemCount);
   }, [cartItems, itemCount]);
 
@@ -54,7 +59,7 @@ const App = () => {
         <Route path='/shop/:productName' element={<Product updateCart={updateCart} />} />
       </Routes>
       <Footer />
-      <Cart open={cartOpen} items={cartItems} itemCount={itemCount} closeCart={toggleCart} updateCart={updateCart} />
+      <Cart open={cartOpen} items={cartItems} itemCount={itemCount} closeCart={toggleCart} updateCart={updateCart} removeCartItem={removeCartItem} />
     </BrowserRouter>
   );
 };

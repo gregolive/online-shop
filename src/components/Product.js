@@ -9,7 +9,7 @@ const Product = ({ updateCart }) => {
 
   const quantities = [1, 2, 3, 4, 5];
 
-  const [quantity, setQuantity] = useState();
+  const [quantity, setQuantity] = useState(1);
 
   return (
     <section className="Product">
@@ -39,7 +39,7 @@ const Product = ({ updateCart }) => {
           
           {(product.inStock()) ? 
             <div className='ProductButtons'>
-              <button type='button' className='Button PrimaryButton' onClick={() => updateCart(product, quantity, true)}>Add to cart</button>
+              <button type='button' className='Button PrimaryButton' onClick={() => updateCart(product, parseInt(quantity), true)}>Add to cart</button>
               <button type='button' className='Button SecondaryButton'>Buy now</button>
             </div> : 
             <div className='ProductButtons'>
