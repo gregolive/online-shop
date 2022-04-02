@@ -14,22 +14,20 @@ exports[`renders consistently 1`] = `
       class="ProductGrid"
     >
       <article
-        class="Product"
+        class="ShopProduct"
       >
         <a
           href="/Pearl Model S Coffee Scale - Black"
         >
           <img
             alt="Acaia - Pearl Model S Coffee Scale - Black"
-            class="ProductImg"
+            class="ShopImg"
             src="Acaia-Pearl-S-black.jpg"
           />
         </a>
-        <div
-          class="ProductOverview"
-        >
+        <div>
           <small
-            class="Vendor"
+            class="ShopVendor"
           >
             Acaia
           </small>
@@ -43,34 +41,33 @@ exports[`renders consistently 1`] = `
             </a>
           </h3>
           <strong
-            class="Price"
+            class="ShopPrice"
           >
             $195.00
           </strong>
         </div>
         <button
-          class="Button CartButton"
+          class="Button PrimaryButton"
+          type="button"
         >
           Add to cart
         </button>
       </article>
       <article
-        class="Product"
+        class="ShopProduct"
       >
         <a
-          href="/The Force Tamp 58.5mm"
+          href="/Force Tamp 58.5mm"
         >
           <img
-            alt="Espresso Parts - The Force Tamp 58.5mm"
-            class="ProductImg"
+            alt="Espresso Parts - Force Tamp 58.5mm"
+            class="ShopImg"
             src="forcetamp585.jpg"
           />
         </a>
-        <div
-          class="ProductOverview"
-        >
+        <div>
           <small
-            class="Vendor"
+            class="ShopVendor"
           >
             Espresso Parts
           </small>
@@ -78,40 +75,39 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/The Force Tamp 58.5mm"
+              href="/Force Tamp 58.5mm"
             >
-              The Force Tamp 58.5mm
+              Force Tamp 58.5mm
             </a>
           </h3>
           <strong
-            class="Price"
+            class="ShopPrice"
           >
             $199.00
           </strong>
         </div>
         <button
-          class="Button CartButton"
+          class="Button PrimaryButton"
+          type="button"
         >
           Add to cart
         </button>
       </article>
       <article
-        class="Product"
+        class="ShopProduct"
       >
         <a
-          href="/Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
+          href="/Precision Portafilter Basket - Double 18g - Ridgeless"
         >
           <img
-            alt="IMS - Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
-            class="ProductImg"
+            alt="IMS - Precision Portafilter Basket - Double 18g - Ridgeless"
+            class="ShopImg"
             src="ims18g-ridgeless.jpg"
           />
         </a>
-        <div
-          class="ProductOverview"
-        >
+        <div>
           <small
-            class="Vendor"
+            class="ShopVendor"
           >
             IMS
           </small>
@@ -119,40 +115,39 @@ exports[`renders consistently 1`] = `
             class="ProductName"
           >
             <a
-              href="/Precision Portafilter Basket - Double 18/20 gr - Ridgeless"
+              href="/Precision Portafilter Basket - Double 18g - Ridgeless"
             >
-              Precision Portafilter Basket - Double 18/20 gr - Ridgeless
+              Precision Portafilter Basket - Double 18g - Ridgeless
             </a>
           </h3>
           <strong
-            class="Price"
+            class="ShopPrice"
           >
             $30.58
           </strong>
         </div>
         <button
-          class="Button CartButton"
+          class="Button PrimaryButton"
+          type="button"
         >
           Add to cart
         </button>
       </article>
       <article
-        class="Product"
+        class="ShopProduct"
       >
         <a
           href="/Maplewood Knockbox Set"
         >
           <img
             alt="IMS - Maplewood Knockbox Set"
-            class="ProductImg"
+            class="ShopImg"
             src="maple-knock-set.jpg"
           />
         </a>
-        <div
-          class="ProductOverview"
-        >
+        <div>
           <small
-            class="Vendor"
+            class="ShopVendor"
           >
             IMS
           </small>
@@ -166,34 +161,33 @@ exports[`renders consistently 1`] = `
             </a>
           </h3>
           <strong
-            class="Price"
+            class="ShopPrice"
           >
             $63.96
           </strong>
         </div>
         <button
-          class="Button CartButton"
+          class="Button PrimaryButton"
+          type="button"
         >
           Add to cart
         </button>
       </article>
       <article
-        class="Product"
+        class="ShopProduct"
       >
         <a
           href="/Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs"
         >
           <img
             alt="SSP - Multi-Purpose Grinding Red Speed Coated 64mm Flat Burrs"
-            class="ProductImg"
+            class="ShopImg"
             src="ssp-multi-purpose.jpg"
           />
         </a>
-        <div
-          class="ProductOverview"
-        >
+        <div>
           <small
-            class="Vendor"
+            class="ShopVendor"
           >
             SSP
           </small>
@@ -207,34 +201,33 @@ exports[`renders consistently 1`] = `
             </a>
           </h3>
           <strong
-            class="Price"
+            class="ShopPrice"
           >
             $185.00
           </strong>
         </div>
         <button
-          class="Button CartButton"
+          class="Button PrimaryButton"
+          type="button"
         >
           Add to cart
         </button>
       </article>
       <article
-        class="Product"
+        class="ShopProduct"
       >
         <a
           href="/Tamping Mat with Corner Edge"
         >
           <img
             alt="Barista Basics - Tamping Mat with Corner Edge"
-            class="ProductImg"
+            class="ShopImg"
             src="tamping-mat-corner.jpg"
           />
         </a>
-        <div
-          class="ProductOverview"
-        >
+        <div>
           <small
-            class="Vendor"
+            class="ShopVendor"
           >
             Barista Basics
           </small>
@@ -248,13 +241,15 @@ exports[`renders consistently 1`] = `
             </a>
           </h3>
           <strong
-            class="Price"
+            class="ShopPrice"
           >
             $28.00
           </strong>
         </div>
         <button
-          class="Button CartButton"
+          class="Button PrimaryButton"
+          disabled=""
+          type="button"
         >
           Add to cart
         </button>

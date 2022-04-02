@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
+    <header className="SiteHeader">
       <Link to='/' className='HeaderLogo'>
         <img src={require('../img/logo.png')} alt='prospresso logo' />
         <h1>prospresso</h1>

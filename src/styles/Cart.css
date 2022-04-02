@@ -1,0 +1,33 @@
+.CartContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.Cart {
+  background: var(--primary);
+  padding: 3rem 6vw;
+  height: 100vh;
+  width: min(80vw, 30rem);
+  box-sizing: border-box;
+}
+
+.CartHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.CartCount {
+  color: var(--highlight);
+  font-size: 1.2rem;
+}
+
+.CartProducts {
+
+}

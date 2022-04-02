@@ -5,6 +5,7 @@ import Home from './Home';
 import Shop from './Shop';
 import Product from './Product';
 import Footer from './Footer';
+import Cart from './Cart';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/shop/:productName' element={<Product />} />
       </Routes>
       <Footer />
+      <Cart />
     </BrowserRouter>
   );
 };
