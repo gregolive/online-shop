@@ -1,13 +1,11 @@
 import '../styles/Cart.css';
 import '@fortawesome/fontawesome-free/js/all';
 
-const Cart = ({ open, items, closeCart, updateCart }) => {
+const Cart = ({ open, items, itemCount, closeCart, updateCart }) => {
   const containerClass = (open) ? 'CartContainer Open' : 'CartContainer Close';
 
-  const itemCountText = (items.length === 1) ? 'item' : 'items';
-
   const cartProducts = (
-    (items && items.length > 0) ? items.map((item) =>
+    (itemCount > 0) ? items.map((item) =>
       <div key={item.product.id} className='CartRow'>
         <img src={item.product.img} alt={`${item.product.vendor} - ${item.product.name}`} />
         
@@ -45,12 +43,14 @@ const Cart = ({ open, items, closeCart, updateCart }) => {
             <h4>Shopping cart</h4>
           </div>
 
-          <p className='CartCount'>{items.length} {itemCountText}</p>
+          <p className='CartCount'>{itemCount} {(itemCount === 1) ? 'item' : 'items'}</p>
         </header>
 
         <div className='CartProducts'>
           {cartProducts}
         </div>
+
+        {(itemCount > 0) ? <button type='button' className='Button PrimaryButton'>Proceed to Checkout</button> : null}
       </div>
     </div>
   );

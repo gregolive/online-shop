@@ -12,42 +12,49 @@ import CartItem from '../helpers/cartItem';
 const App = () => {
   const [cartOpen, setcartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
-
-  // Get cart from localStorage on mount
-  useEffect(() => {
-    const savedCart = localStorage.getItem('Cart');
-    if (savedCart) { setCartItems(savedCart); }
-  }, []);
-
-  // Save cart to localStorage on cartItems update
-  useEffect(() => {
-    localStorage.setItem('Cart', cartItems);
-  }, [cartItems]);
+  const [itemCount, setItemCount] = useState(0);
 
   const toggleCart = () => setcartOpen(!cartOpen);
 
-  const updateCart = (product, quantity) => {
+  const updateCart = (product, quantity, open) => {
     const item = cartItems.find((item) => item.product === product);
-    if (typeof item === 'undefined') {
-      const newItem = new CartItem(product, quantity);
-      console.log(newItem);
-      setCartItems(cartItems.concat(newItem));
-    } else {
+    if (item) {
       item.updateQuantity(quantity);
+    } else {
+      const newItem = new CartItem(product, quantity);
+      setCartItems(cartItems.concat(newItem));
     }
-    console.log(cartItems);
+    setItemCount(itemCount + quantity);
+    if (open) { toggleCart() }
   };
+
+  // Get cart info from localStorage on mount
+  useEffect(() => {
+    const savedItems = JSON.parse(localStorage.getItem('CartItems'));
+    const savedCount = parseInt(localStorage.getItem('CartCount'));
+    if (savedItems) {
+      setCartItems(savedItems);
+      setItemCount(savedCount);
+    }
+  }, []);
+
+  // Save cart to localStorage on cartItems/itemCount update
+  useEffect(() => {
+    const items = JSON.stringify(cartItems);
+    localStorage.setItem('CartItems', items);
+    localStorage.setItem('CartCount', itemCount);
+  }, [cartItems, itemCount]);
 
   return (
     <BrowserRouter>
-      <Header openCart={toggleCart} cartCount={cartItems.length} />
+      <Header openCart={toggleCart} itemCount={itemCount} />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/shop' element={<Shop updateCart={updateCart} />} />
         <Route path='/shop/:productName' element={<Product updateCart={updateCart} />} />
       </Routes>
       <Footer />
-      <Cart open={cartOpen} items={cartItems} closeCart={toggleCart} updateCart={updateCart} />
+      <Cart open={cartOpen} items={cartItems} itemCount={itemCount} closeCart={toggleCart} updateCart={updateCart} />
     </BrowserRouter>
   );
 };

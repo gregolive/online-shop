@@ -20,10 +20,10 @@
 .Cart {
   color: var(--text);
   background: white;
-  min-height: 100vh;
+  height: 100vh;
   width: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   float: right;
   transition: 0.4s;
 }
@@ -65,17 +65,21 @@ h4 {
 }
 
 .CartProducts {
+  align-self: start;
   padding: 2rem 6vw;
   display: grid;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .CartRow {
+  
   display: grid;
-  grid-template: 5rem / auto 1fr;
+  grid-template: 5rem 1.5rem / auto 1fr;
   row-gap: 0.5rem;
 }
 
-.CartRow:not(:last-child) {
+.CartRow:not(:last-of-type) {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--text);
   margin-bottom: 1rem;
@@ -117,4 +121,8 @@ h5 {
 
 .ItemQuantity > Button {
   padding: 0.25rem;
+}
+
+.Cart > button {
+  margin: 2rem 6vw;
 }

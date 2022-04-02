@@ -22,7 +22,7 @@ const Shop = ({ updateCart }) => {
             </div>
 
             {(product.inStock()) ? 
-              <button type='button' className='Button PrimaryButton' onClick={() => updateCart(product, 1)}>Add to cart</button>
+              <button type='button' className='Button PrimaryButton' onClick={() => updateCart(product, 1, true)}>Add to cart</button>
               : <button type='button' className='Button PrimaryButton' disabled>Add to cart</button>
             }
           </article>

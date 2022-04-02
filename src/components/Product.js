@@ -1,27 +1,15 @@
 import { useParams } from "react-router-dom";
 import '../styles/Product.css';
 import { findProduct } from '../helpers/products';
+import { useState } from "react";
 
-const Product = ({ testProduct }) => {
+const Product = ({ updateCart }) => {
   const { productName } = useParams();
-  const product = (typeof testProduct === 'undefined') ? findProduct(productName) : testProduct;
+  const product = findProduct(productName);
 
-  const inStock = (<p className='Stock InStock'>In stock</p>);
-  const outOfStock = (<p className='Stock OutOfStock'>Out of stock</p>);
+  const quantities = [1, 2, 3, 4, 5];
 
-  const enabledButtons = (
-    <>
-      <button type='submit' className='Button PrimaryButton'>Add to cart</button>
-      <button type='button' className='Button SecondaryButton'>Buy now</button>
-    </>
-  );
-
-  const disabledButtons = (
-    <>
-      <button type='submit' className='Button PrimaryButton' disabled>Add to cart</button>
-      <button type='button' className='Button SecondaryButton' disabled>Buy now</button>
-    </>
-  );
+  const [quantity, setQuantity] = useState();
 
   return (
     <section className="Product">
@@ -36,19 +24,29 @@ const Product = ({ testProduct }) => {
 
         <strong className='Price'>{product.price}</strong>
 
-        {(product.inStock()) ? inStock : outOfStock}
+        {(product.inStock()) ?
+          <p className='Stock InStock'>In stock</p> : 
+          <p className='Stock OutOfStock'>Out of stock</p>  
+        }
 
         <form className='QuantityForm'>
-          <label htmlFor='Quantity'>Quantity</label>
-          <select name='Quantity' id='Quantity'>
-            <option value='1'>1</option>
-            <option value='2'>2</option>
-            <option value='3'>3</option>
-            <option value='4'>4</option>
+          <label>Quantity</label>
+          <select value={quantity} onChange={(e) => setQuantity(e.target.value)}>
+            {quantities.map((value) =>
+              <option key={value} value={value}>{value}</option>
+            )}
           </select>
-          <div className='ProductButtons'>
-          {(product.inStock()) ? enabledButtons : disabledButtons}
-          </div>
+          
+          {(product.inStock()) ? 
+            <div className='ProductButtons'>
+              <button type='button' className='Button PrimaryButton' onClick={() => updateCart(product, quantity, true)}>Add to cart</button>
+              <button type='button' className='Button SecondaryButton'>Buy now</button>
+            </div> : 
+            <div className='ProductButtons'>
+              <button type='button' className='Button PrimaryButton' disabled>Add to cart</button>
+              <button type='button' className='Button SecondaryButton' disabled>Buy now</button>
+            </div>
+          }
         </form>
       </div>
     </section>
