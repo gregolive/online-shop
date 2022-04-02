@@ -47,6 +47,11 @@ h2 {
   filter: brightness(80%);
 }
 
+.TransparentButton {
+  background: transparent;
+  border: none;
+}
+
 button:disabled {
   cursor: not-allowed;
   filter: brightness(80%);

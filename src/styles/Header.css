@@ -28,5 +28,27 @@ h1 {
   color: var(--text);
   font-size: 1.1rem;
   display: flex;
+  align-items: flex-end;
   gap: 4vw;
+}
+
+.HeaderLinks > button {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem 0 0;
+  position: relative;
+}
+
+.CartNum {
+  color: var(--primary);
+  background: var(--highlight);
+  font-size: 0.8rem;
+  height: 1.25rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
