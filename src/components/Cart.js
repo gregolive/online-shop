@@ -1,19 +1,37 @@
 import '../styles/Cart.css';
 import '@fortawesome/fontawesome-free/js/all';
 
-const Cart = ({ open, items, handleClick }) => {
+const Cart = ({ open, items, closeCart, updateCart }) => {
   const containerClass = (open) ? 'CartContainer Open' : 'CartContainer Close';
 
+  const itemCountText = (items.length === 1) ? 'item' : 'items';
+
   const cartProducts = (
-    (items && items.length > 0) ?
-    <div className='CartProducts'>
-      {items.map((product) =>
-        <div>
-          {product.name}
+    (items && items.length > 0) ? items.map((item) =>
+      <div key={item.product.id} className='CartRow'>
+        <img src={item.product.img} alt={`${item.product.vendor} - ${item.product.name}`} />
+        
+        <div className='ItemInfo'>
+          <small>{item.product.vendor}</small>
+          <h5>{item.product.name}</h5>
+          <strong>{item.product.price}</strong>
         </div>
-      )}
-    </div>
-    : null
+        
+        <div className='ItemQuantity'>
+          <button type='button' className='Button TransparentButton'>
+            <i className='fa-solid fa-minus'></i>
+          </button>
+          <span>{item.quantity}</span>
+          <button type='button' className='Button TransparentButton'>
+            <i className='fa-solid fa-plus'></i>
+          </button>
+
+          <button type='button' className='Button TransparentButton'>
+            Remove
+          </button>
+        </div>
+      </div>
+    ) : null
   );
 
   return (
@@ -21,17 +39,18 @@ const Cart = ({ open, items, handleClick }) => {
       <div className='Cart'>
         <header className='CartHeader'>
           <div className='CartTitle'>
-            <button type='button' className='Button TransparentButton' onClick={handleClick}>
+            <button type='button' className='Button TransparentButton' onClick={closeCart}>
               <i className='fa-solid fa-xmark'></i>
             </button>
             <h4>Shopping cart</h4>
           </div>
-          <p className='CartCount'>0 items</p>
+
+          <p className='CartCount'>{items.length} {itemCountText}</p>
         </header>
 
-        {cartProducts}
-
-        
+        <div className='CartProducts'>
+          {cartProducts}
+        </div>
       </div>
     </div>
   );

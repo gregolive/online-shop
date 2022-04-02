@@ -19,9 +19,8 @@
 
 .Cart {
   color: var(--text);
-  background: var(--primary);
-  padding: 0 6vw;
-  height: 100vh;
+  background: white;
+  min-height: 100vh;
   width: 0;
   display: flex;
   flex-direction: column;
@@ -34,6 +33,8 @@
 }
 
 .CartHeader {
+  background: var(--primary);
+  padding: 0 6vw;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -48,7 +49,7 @@
 .CartTitle > Button {
   font-size: 1.5rem;
   padding: 0;
-  margin-right: 1rem;
+  margin-right: 2rem;
   align-self: start;
 }
 
@@ -64,5 +65,56 @@ h4 {
 }
 
 .CartProducts {
+  padding: 2rem 6vw;
+  display: grid;
+}
 
+.CartRow {
+  display: grid;
+  grid-template: 5rem / auto 1fr;
+  row-gap: 0.5rem;
+}
+
+.CartRow:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--text);
+  margin-bottom: 1rem;
+}
+
+.CartRow > img {
+  height: 5rem;
+}
+
+.ItemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.ItemInfo > small {
+  font-size: 0.9rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ItemInfo > strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ItemQuantity {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template: 1.5rem / repeat(3, 1.5rem) 5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.ItemQuantity > Button {
+  padding: 0.25rem;
 }

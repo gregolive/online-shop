@@ -2,7 +2,7 @@ import '../styles/Header.css';
 import '@fortawesome/fontawesome-free/js/all';
 import { Link } from "react-router-dom";
 
-const Header = ({ handleClick }) => {
+const Header = ({ openCart, cartCount }) => {
   return (
     <header className="SiteHeader">
       <Link to='/' className='HeaderLogo'>
@@ -13,9 +13,9 @@ const Header = ({ handleClick }) => {
       <div className='HeaderLinks'>
         <Link to='/'>Home</Link>
         <Link to='/shop'>Shop</Link>
-        <button type='button' className='Button TransparentButton' onClick={handleClick}>
+        <button type='button' className='Button TransparentButton' onClick={openCart}>
           <i className='fa-solid fa-cart-shopping'></i>
-          <span className='CartNum'>0</span>
+          <span className='CartNum'>{cartCount}</span>
         </button>
       </div>
     </header>

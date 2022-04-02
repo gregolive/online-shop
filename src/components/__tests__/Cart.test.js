@@ -1,11 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from "react-router-dom";
 import Cart from '../Cart';
-
-test('renders close button', () => {
-  render(<BrowserRouter><Cart /></BrowserRouter>);
-  expect(screen.getAllByRole('button')[0].textContent).toMatch(/Back to shop/);
-});
+import '@fortawesome/fontawesome-free/js/all';
 
 test('renders heading', () => {
   render(<BrowserRouter><Cart /></BrowserRouter>);

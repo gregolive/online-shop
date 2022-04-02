@@ -2,10 +2,7 @@ import '../styles/Shop.css';
 import { Link } from "react-router-dom";
 import products from '../helpers/products';
 
-const Shop = () => {
-  const enabledButton = (<button type='button' className='Button PrimaryButton'>Add to cart</button>);
-  const disabledButton = (<button type='button' className='Button PrimaryButton' disabled>Add to cart</button>);
-  
+const Shop = ({ updateCart }) => {
   return (
     <section className="Shop">
       <h2 className='ShopHeading'>Shop Espresso Tools</h2>
@@ -24,7 +21,10 @@ const Shop = () => {
               <strong className='ShopPrice'>{product.price}</strong>
             </div>
 
-            {(product.inStock()) ? enabledButton : disabledButton}
+            {(product.inStock()) ? 
+              <button type='button' className='Button PrimaryButton' onClick={() => updateCart(product, 1)}>Add to cart</button>
+              : <button type='button' className='Button PrimaryButton' disabled>Add to cart</button>
+            }
           </article>
         )}
       </div>
