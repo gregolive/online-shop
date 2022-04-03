@@ -2,9 +2,17 @@
   background: var(--primary);
   height: 5rem;
   padding: 0 6vw;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 4vw;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+}
+
+.MenuButton {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  display: none;
 }
 
 .HeaderLogo {
@@ -19,7 +27,7 @@
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -28,13 +36,13 @@ h1 {
   color: var(--text);
   font-size: 1.1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 4vw;
 }
 
-.HeaderLinks > button {
+.CartButton {
   font-size: 1.2rem;
-  padding: 0.5rem 1rem 0 0;
+  padding: 0.5rem 1rem 0.5rem 0;
   position: relative;
 }
 
@@ -51,4 +59,59 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .SiteHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .MenuButton {
+    display: block;
+  }
+
+  .HeaderLinks {
+    font-size: 1.3rem;
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    border-bottom: none;
+    display: grid;
+    grid-template-rows: 2rem 2rem;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0 1rem 0;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 5rem;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .HeaderLinks.Open {
+    background: var(--primary);
+    visibility: visible;
+    opacity: 1;
+    border-bottom: 1px solid var(--text);
+  }
+
+  .HeaderLinks > a {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HeaderLogo {
+    gap: 0.5rem;
+  }
+
+  .HeaderLogo img {
+    height: 2.2rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
 }

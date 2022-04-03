@@ -2,7 +2,7 @@ import '../styles/Cart.css';
 import '@fortawesome/fontawesome-free/js/all';
 
 const Cart = ({ open, items, itemCount, closeCart, updateCart, removeCartItem }) => {
-  const containerClass = (open) ? 'CartContainer Open' : 'CartContainer Close';
+  const containerClass = (open) ? 'CartContainer Open' : 'CartContainer';
 
   const cartProducts = (
     (itemCount > 0) ? items.map((item) =>
