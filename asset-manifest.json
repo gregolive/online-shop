@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-shop/static/css/main.fef1f4d4.css",
-    "main.js": "/online-shop/static/js/main.20b77c81.js",
+    "main.js": "/online-shop/static/js/main.6a6a4306.js",
     "static/media/banner.jpg": "/online-shop/static/media/banner.8ba1e0f2f621235f9519.jpg",
     "static/media/Acaia-Pearl-S-black.jpg": "/online-shop/static/media/Acaia-Pearl-S-black.0160a7ceff51b6900bda.jpg",
     "static/media/tamping-mat-corner.jpg": "/online-shop/static/media/tamping-mat-corner.9b99d2d71aeaad141696.jpg",
@@ -12,10 +12,10 @@
     "static/media/logo.png": "/online-shop/static/media/logo.f5fbe89fdea1e07c0731.png",
     "index.html": "/online-shop/index.html",
     "main.fef1f4d4.css.map": "/online-shop/static/css/main.fef1f4d4.css.map",
-    "main.20b77c81.js.map": "/online-shop/static/js/main.20b77c81.js.map"
+    "main.6a6a4306.js.map": "/online-shop/static/js/main.6a6a4306.js.map"
   },
   "entrypoints": [
     "static/css/main.fef1f4d4.css",
-    "static/js/main.20b77c81.js"
+    "static/js/main.6a6a4306.js"
   ]
 }
