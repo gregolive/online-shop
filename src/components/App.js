@@ -51,7 +51,7 @@ const App = () => {
   }, [cartItems, itemCount]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header openCart={toggleCart} itemCount={itemCount} />
       <Routes>
         <Route path='/' element={<Home />} />
