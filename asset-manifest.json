@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/online-shop/static/css/main.fef1f4d4.css",
+    "main.js": "/online-shop/static/js/main.915d7f4f.js",
+    "static/media/banner.jpg": "/online-shop/static/media/banner.8ba1e0f2f621235f9519.jpg",
+    "static/media/Acaia-Pearl-S-black.jpg": "/online-shop/static/media/Acaia-Pearl-S-black.0160a7ceff51b6900bda.jpg",
+    "static/media/tamping-mat-corner.jpg": "/online-shop/static/media/tamping-mat-corner.9b99d2d71aeaad141696.jpg",
+    "static/media/maple-knock-set.jpg": "/online-shop/static/media/maple-knock-set.97515686b39723d91a3d.jpg",
+    "static/media/forcetamp585.jpg": "/online-shop/static/media/forcetamp585.277659778038d1d9f1fe.jpg",
+    "static/media/ims18g-ridgeless.jpg": "/online-shop/static/media/ims18g-ridgeless.60f6fa09b71634b9785f.jpg",
+    "static/media/ssp-multi-purpose.jpg": "/online-shop/static/media/ssp-multi-purpose.94d54285b5a2fdc0adf0.jpg",
+    "static/media/logo.png": "/online-shop/static/media/logo.f5fbe89fdea1e07c0731.png",
+    "index.html": "/online-shop/index.html",
+    "main.fef1f4d4.css.map": "/online-shop/static/css/main.fef1f4d4.css.map",
+    "main.915d7f4f.js.map": "/online-shop/static/js/main.915d7f4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fef1f4d4.css",
+    "static/js/main.915d7f4f.js"
+  ]
+}
