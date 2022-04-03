@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders consistently 1`] = `
+<div>
+  <div
+    class="CartContainer"
+  >
+    <div
+      class="Cart"
+    >
+      <header
+        class="CartHeader"
+      >
+        <div
+          class="CartTitle"
+        >
+          <button
+            class="Button TransparentButton"
+            type="button"
+          >
+            <i
+              class="fa-solid fa-xmark"
+            />
+          </button>
+          <h4>
+            Shopping cart
+          </h4>
+        </div>
+        <p
+          class="CartCount"
+        >
+           
+          items
+        </p>
+      </header>
+      <div
+        class="CartProducts"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 import '../styles/Shop.css';
 import { Link } from "react-router-dom";
-import products from '../helpers/products';
+import products from '../helpers/Product';
 
 const Shop = ({ updateCart }) => {
   return (

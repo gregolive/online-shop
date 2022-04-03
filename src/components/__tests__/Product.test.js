@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import Product from '../Product';
-import products from '../../helpers/products';
+import products from '../../helpers/Product';
 
 const testProduct = products[0];
 

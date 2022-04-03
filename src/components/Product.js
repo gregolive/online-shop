@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import '../styles/Product.css';
-import { findProduct } from '../helpers/products';
+import { findProduct } from '../helpers/Product';
 import { useState } from "react";
 
 const Product = ({ updateCart }) => {

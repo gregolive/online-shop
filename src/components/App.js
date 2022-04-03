@@ -7,7 +7,7 @@ import Shop from './Shop';
 import Product from './Product';
 import Footer from './Footer';
 import Cart from './Cart';
-import CartItem from '../helpers/cartItem';
+import CartItem from '../helpers/CartItem';
 
 const App = () => {
   const [cartOpen, setcartOpen] = useState(false);
@@ -59,7 +59,7 @@ const App = () => {
         <Route path='/shop/:productName' element={<Product updateCart={updateCart} />} />
       </Routes>
       <Footer />
-      <Cart open={cartOpen} items={cartItems} itemCount={itemCount} closeCart={toggleCart} updateCart={updateCart} removeCartItem={removeCartItem} />
+      <Cart items={cartItems} itemCount={itemCount} open={cartOpen} closeCart={toggleCart} updateCart={updateCart} removeCartItem={removeCartItem} />
     </BrowserRouter>
   );
 };
