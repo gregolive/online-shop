@@ -17,7 +17,7 @@ exports[`renders consistently 1`] = `
         href="/shop"
       >
         <button
-          class="Button ShopButton"
+          class="Button PrimaryButton"
           type="button"
         >
           Shop now
